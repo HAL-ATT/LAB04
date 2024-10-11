@@ -103,7 +103,13 @@ ggplot(data = staff_long,
        mapping = aes(x = year, 
                      y = percent, 
                      colour = faculty_type)) +
-  geom_point()
+  geom_point() +
+  labs(
+    x = "year",
+    y = "percentage",
+    title = "Staff Long",
+    subtitle = "a MonkeRs chart"
+  )
 
 ```
 
